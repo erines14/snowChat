@@ -1,7 +1,6 @@
 import re
 import warnings
 import sys
-sys.path.append('/Users/Erin.Escobar/AppData/Local/miniconda3/envs/test_snowchat/utils')
 
 
 import streamlit as st
@@ -10,8 +9,8 @@ from snowflake.snowpark.exceptions import SnowparkSQLException
 from chain import load_chain
 
 # from utils.snow_connect import SnowflakeConnection
-from snowchat_ui import StreamlitUICallbackHandler, message_func
-from snowddl import Snowddl
+from utils.snowchat_ui import StreamlitUICallbackHandler, message_func
+from utils.snowddl import Snowddl
 
 warnings.filterwarnings("ignore")
 chat_history = []
